@@ -1,38 +1,208 @@
-.App {
+/* --- Global Styles & Background --- */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* A beautiful, colorful gradient background */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Main App Container --- */
+.app-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* --- Login Page Styles --- */
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-container h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box; /* Important for padding and width */
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.error-message {
+  color: #d93025;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #667eea;
   color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: #5a6ed8;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* --- Landing Page Styles --- */
+.landing-page {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.landing-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.landing-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.landing-header h1 span {
+  color: #667eea; /* Highlight the username */
+  font-weight: 700;
+}
+
+/* --- Navigation Buttons --- */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  color: #555;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style for the active button */
+.nav-buttons button.active {
+  background-color: #667eea;
+  color: white;
+  border-color: #5a6ed8;
+}
+
+/* --- Content Section --- */
+.content-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 30px;
+  min-height: 200px; /* Ensures consistent size */
+  text-align: left;
+  line-height: 1.6;
+}
+
+.content-section p {
+  margin-top: 0;
+}
+
+/* --- Contact Form within Content Section --- */
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #764ba2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #6a4095;
+}
+
+/* --- Logout Button --- */
+.logout-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d9534f;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
 }
