@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  /* A beautiful, colorful gradient background */
+  
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #333;
   min-height: 100vh;
@@ -16,14 +16,14 @@ body {
   align-items: center;
 }
 
-/* --- Main App Container --- */
+
 .app-container {
   width: 100%;
   max-width: 800px;
   padding: 20px;
 }
 
-/* --- Login Page Styles --- */
+
 .login-container {
   background-color: white;
   padding: 40px;
@@ -88,7 +88,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* --- Landing Page Styles --- */
+
 .landing-page {
   background-color: white;
   padding: 40px;
@@ -108,12 +108,6 @@ body {
   color: #333;
 }
 
-.landing-header h1 span {
-  color: #667eea; /* Highlight the username */
-  font-weight: 700;
-}
-
-/* --- Navigation Buttons --- */
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -136,19 +130,18 @@ body {
   background-color: #e0e0e0;
 }
 
-/* Style for the active button */
+
 .nav-buttons button.active {
   background-color: #667eea;
   color: white;
   border-color: #5a6ed8;
 }
 
-/* --- Content Section --- */
 .content-section {
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 30px;
-  min-height: 200px; /* Ensures consistent size */
+  min-height: 200px;
   text-align: left;
   line-height: 1.6;
 }
@@ -157,7 +150,7 @@ body {
   margin-top: 0;
 }
 
-/* --- Contact Form within Content Section --- */
+
 .contact-form label {
   display: block;
   margin-top: 15px;
@@ -190,7 +183,7 @@ body {
   background-color: #6a4095;
 }
 
-/* --- Logout Button --- */
+
 .logout-button {
   margin-top: 30px;
   padding: 10px 20px;
