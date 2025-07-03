@@ -25,11 +25,14 @@ body {
 
 
 .login-container {
+  width: 300px;
+  height: 350px;
   background-color: white;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: hidden;
 }
 
 .login-container h2 {
@@ -51,13 +54,15 @@ body {
 }
 
 .form-group input {
-  width: 100%;
+  width: 300px;
   padding: 12px;
-  border: 1px solid #ccc;
+  font-size: 16px;
   border-radius: 6px;
-  box-sizing: border-box; /* Important for padding and width */
-  transition: border-color 0.3s;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: none;
 }
+
 
 .form-group input:focus {
   outline: none;
